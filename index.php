@@ -13,8 +13,9 @@
     </div>
   </form>
 
-  <div class="p-1 mt-3 rounded-1 flex-grow-1 overflow-auto m-auto"
-    style="height: calc(100vh - 200px); max-width: 60%;">
+  <div class="p-1 mt-3 rounded-1 flex-grow-1 overflow-auto m-auto" style="height: calc(100vh - 200px);
+   /* max-width: 60%; */
+   ">
 
 
     <div class="table-responsive user-select-none">
@@ -24,22 +25,48 @@
           <tr>
             <th class="text-center">Sr. No</th>
             <th class="text-center">Task Description</th>
-            <th class="text-center"  colspan="2">Actions</th>
+            <th class="text-center">Actions</th>
           </tr>
         </thead>
         <tbody class="table-group-divider">
-          <tr class="table-primary">
-            <td scope="row">Item</td>
-            <td>Item</td>
-            <td>Item</td>
-            <td>Item</td>
-          </tr>
-          
+          <tr class="table-primary text-center">
+            <td scope="row">1</td>
+            <td>complete application</td>
+            <td class="d-flex justify-content-center align-items-center gap-3">
+              <button class="btn btn-sm btn-success"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                <div class="d-flex justify-content-center align-items-center gap-1">
+                  <p class="m-0 p-0">Update</p>
+                  <i class="fa-solid fa-pen"></i>
+                </div>
+              </button>
+              <button class="btn btn-sm btn-danger"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                <div class="d-flex justify-content-center align-items-center gap-1">
+                  <p class="m-0 p-0">Delete</p>
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+              </button>
+            </td>
 
+            <!-- <td class="text-center"><button class="btn btn-sm btn-success d-flex justify-content-center align-items-center gap-1"
+            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+            >
+                <p class="m-0 p-0">Update</p>
+                <i class="fa-solid fa-pen"></i>
+              </button></td>
+            <td class="text-center"><button class="btn btn-sm btn-danger d-flex justify-content-center align-items-center gap-1"
+            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
+            >
+                <p class="m-0 p-0">Delete</p>
+                <i class="fa-solid fa-trash"></i>
+              </button></td> -->
+
+
+
+          </tr>
         </tbody>
-        <!-- <tfoot>
-          
-        </tfoot> -->
+
       </table>
     </div>
 
