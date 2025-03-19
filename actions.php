@@ -1,7 +1,6 @@
 <?php
 include './db.php';
 
-
 if (isset($_POST["delete"])) {
     $id = $_POST['deleteID'];  // Get ID from the form
     $result = $con->query("DELETE FROM `task` WHERE `id`='$id'");
@@ -11,7 +10,6 @@ if (isset($_POST["delete"])) {
     header('location: index.php');
     exit();
 }
-
 
 if (isset($_POST["updateStatus"])) {
     $id = $_POST['updateStatusID'];  // Get ID from the form
@@ -24,8 +22,6 @@ if (isset($_POST["updateStatus"])) {
     header('location: index.php');
     exit();
 }
-
-
 
 if (isset($_POST["update"])) {
     $id = $_POST['updateID'];  // Get ID from the form
@@ -43,8 +39,6 @@ if (isset($_POST["update"])) {
     include './header.php';
     if ($row) {
         ?>
-
-
         <div class="container-md bg-primary bg-gradient flex-grow-1 overflow-hidden p-0">
             <h1 class="text-light fw-bolder text-center text-uppercase user-select-none bg-dark py-4">
                 Todo Application
@@ -75,12 +69,6 @@ if (isset($_POST["update"])) {
     } else {
         echo "No task found with ID: $id";
     }
-
 }
-
 ?>
-
-
-
-
     <?php include './footer.php' ?>
