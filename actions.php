@@ -48,11 +48,12 @@ if (isset($_POST["update"])) {
                 <div class="w-50 m-auto d-flex flex-column gap-4">
                     <div>
                         <label class="form-label">Task</label>
-                        <input placeholder="<?php echo $task ?>" name="task" class="form-control">
+                        <input placeholder="<?php echo $task ?>" value="<?php echo $task ?>" name="task" class="form-control">
                     </div>
                     <div>
                         <label class="form-label">Status</label>
-                        <input placeholder="<?php echo $status ?>" name="status" class="form-control" />
+                        <input placeholder="<?php echo $status ?>" value="<?php echo $status ?>" name="status"
+                            class="form-control" />
                     </div>
                     <button class="btn btn-success mt-2" name="updateStatus">
                         <input type="hidden" name="updateStatusID" value="<?php echo $id; ?>">
