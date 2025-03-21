@@ -1,7 +1,8 @@
 # Todo Application
 
 A simple and intuitive Todo Application built with PHP and MySQL to manage daily tasks efficiently. This project allows users to add, update, and delete tasks, while providing a clean & responsive UI with Bootstrap for better user experience.
-Live Demo: https://todophp.infinityfreeapp.com
+
+-Live Demo: https://todophp.infinityfreeapp.com
 
 ## Features
 - Add new tasks with ease.
